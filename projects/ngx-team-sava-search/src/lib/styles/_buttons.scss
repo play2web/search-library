@@ -1,0 +1,31 @@
+button {
+  height: single-px-to-rem(20);
+  position: relative;
+  margin-bottom: single-px-to-rem(30);
+  width: single-px-to-rem(100);
+  top: 50%;
+  left: 40%;
+  font-family: $font-family;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $grey-color;
+  border-radius: single-px-to-rem(4);
+  box-shadow: 0 single-px-to-rem(2) single-px-to-rem(4) 0 rgba(28, 26, 26, 0.2);
+  border: solid single-px-to-rem(1) $border-button;
+  background-color: $border-background;
+  cursor: pointer;
+
+  &:active,
+  &:focus,
+  &:hover {
+    &:not([disabled]) {
+      opacity: .9;
+      text-decoration: none;
+      transition: all .35s;
+    }
+  }
+}

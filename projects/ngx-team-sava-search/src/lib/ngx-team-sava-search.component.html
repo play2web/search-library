@@ -1,0 +1,35 @@
+<div class="overlay" *ngIf='submitted'>
+  <div class="loader"></div>
+</div>
+
+<div class="container container-custom">
+  <form [formGroup]="searchForm" (ngSubmit)="searchProducts()" (search)="searchReset()" autocomplete="off">
+    <div class="row">
+      <input class="search-input col" name="search" formControlName="search" type="search"
+        placeholder="Search something">
+    </div>
+  </form>
+  <div class="row pl-35" *ngIf="products">
+    <p class="paragraph-color">Results:</p>
+  </div>
+  <div class="row pl-35" *ngIf="products?.length === 0">
+    <p class="paragraph-color">No results</p>
+  </div>
+  <div class="row pl-20 mb-15">
+    <ng-container *ngFor="let product of products">
+      <div class="product col-md-4">
+        <img [src]="product.imageUrl">
+        <div class="product-description">
+          <p>{{product.title}}</p>
+          <small>{{product.categoy}}</small>
+        </div>
+        <div class="product-download">
+          <span>DOWNLOAD</span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <div class='row' *ngIf="products">
+    <button type="button" (click)="searchProducts()">Refresh results</button>
+  </div>
+</div>

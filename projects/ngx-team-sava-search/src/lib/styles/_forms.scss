@@ -1,0 +1,31 @@
+.search-input {
+  position: relative;
+  background-color: transparent;
+  font-size: 28px;
+  line-height: 18px;
+  color: $input-border-bottom;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: single-px-to-rem(42) single-px-to-rem(42);
+  font-family: $font-family;
+  font-size: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $input-color;
+  padding: single-px-to-rem(25) single-px-to-rem(50) single-px-to-rem(25) single-px-to-rem(100) !important;
+  background-position: 95% center;
+  border-radius: single-px-to-rem(50);
+  border: single-px-to-rem(1) solid $input-border;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  outline: 0;
+  border: single-px-to-rem(1) solid transparent;
+  border-bottom: single-px-to-rem(1) solid $input-border-bottom;
+  border-radius: 0;
+  background-position: single-px-to-rem(40);
+}

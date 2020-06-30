@@ -1,0 +1,19 @@
+{
+  "name": "ngx-team-sava-search",
+  "version": "0.0.1",
+  "description": "A simple search results API",
+  "author": "Miomir Dancevic",
+  "repository" : {
+    "type":"git",
+    "url": "https://github.com/play2web/search-library.git"
+  },
+  "homepage": "https://github.com/play2web/search-library.git",
+  "licence": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^9.1.11",
+    "@angular/core": "^9.1.11"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}
